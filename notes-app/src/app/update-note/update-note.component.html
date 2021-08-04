@@ -1,8 +1,8 @@
 
- <div class="main" *ngIf = "isAuth">
+ <div class="main">
   <div class="note" *ngIf = "note">
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <h3> Updating Note {{note[0]._id}} </h3>
+      <h3> Updating Note {{note.id}} </h3>
       <div class="mb-3">
       <label class = 'form-label'>Title</label>
       <input class="form-control" formControlName="title">

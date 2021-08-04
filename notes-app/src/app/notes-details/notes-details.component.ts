@@ -3,7 +3,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Note } from '../note';
 import  noteArr  from '../../../Notes';
-import { findReadVarNames } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-notes-details',
@@ -30,8 +29,7 @@ export class NotesDetailsComponent{
     });
   }
   getNotebyID(id){
-      let i
-      for(i=0; i<noteArr.length; i++){
+      for(let i=0; i<noteArr.length; i++){
         if(noteArr[i].id === id){
           this.note = noteArr[i]
         }

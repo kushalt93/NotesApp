@@ -13,7 +13,7 @@ export const routes: Routes = [
     children: [
       { path: 'noteDetails/:id', component: NotesDetailsComponent },
       { path: 'note', component: AddNoteComponent},
-      {path: 'update/:id/:email', component: UpdateNoteComponent},
+      {path: 'update/:id', component: UpdateNoteComponent},
     ]
   },
 ];
