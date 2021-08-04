@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+                </style>
+        </head>
+        <body>
+                <div class >
+                        <div *ngIf = "note" class= "">
+                                <div class = "note">
+                                        <h3 id="title">{{note.title}} Details</h3>
+                                        <hr>
+                                        <p style="font-size: 0.75rem;">Cerated on: {{note.created_date | date: 'EE, MMM d, y, h:mm:ss a'}}</p>
+                                        <p style="font-size: 0.75rem;">Last modified on: {{note.date_modified | date: 'EE, MMM d, y, h:mm:ss a'}}</p>
+                                        <br>
+                                        <p id = "content">{{note.content}}</p>
+                                        
+                                </div>
+                                <div class = 'actions'>
+                                        <div class = 'btn btn-success' [routerLink]= "['/home/update', note.id, note.creator_email]">Update</div>
+                                </div>
+                        </div>
+                </div>
+        </body>
+</html>
+
+

@@ -1,0 +1,42 @@
+
+ <div class="main" *ngIf = "isAuth">
+  <div class="note" *ngIf = "note">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <h3> Updating Note {{note[0]._id}} </h3>
+      <div class="mb-3">
+      <label class = 'form-label'>Title</label>
+      <input class="form-control" formControlName="title">
+      </div>  
+      <div class="mb-3">
+        <label class = 'form-label'>Content</label>
+        <textarea class="form-control" formControlName="content"></textarea>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-danger" (click) = "deleteNote()">Delete</button>
+     </div>  
+    </form>
+
+    <!-- <div *ngIf = '!isAuth'>
+      <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{isAuth}}
+  </div> -->
+  </div>
+</div>

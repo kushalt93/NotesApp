@@ -1,0 +1,17 @@
+<div *ngIf="error">
+    <p>{{error.error}}</p>
+</div>
+<div *ngIf="!error" class = "row">
+            <div class = "column menu">
+                <ul>
+                    <li type="button" class="btn btn-outline-primary" [routerLink]= "['/home/note']" id="add">Add a Note</li>
+                    <li *ngFor="let note of notes" type="button" class="btn btn-outline-primary" [routerLink]= "['/home/noteDetails', note.id]">{{note.title}}</li>
+                </ul>
+                </div>
+                <div class = 'column content'>
+                <router-outlet></router-outlet>
+                </div>
+                <div *ngIf="user">
+                    <p class="welcome">Welcome {{user.profile.given_name}}</p>
+                </div>
+         </div>

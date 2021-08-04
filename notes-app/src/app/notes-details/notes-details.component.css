@@ -1,0 +1,39 @@
+.note {
+    background: #FFFF99;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 375px;
+    margin: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    overflow-y: scroll;
+    }
+
+    .note::-webkit-scrollbar {
+      width: 8px;
+      background-color: #F5F5F5;
+      }
+    .note::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(104, 140, 240, 0.3);
+    }
+  
+    .note::-webkit-scrollbar-thumb {
+    background-color: #e0e0eb;
+    outline: 1px solid slategrey;
+    }
+    .note h3{
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight:   800;
+      margin: auto;
+    }
+
+    .note p{
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight:   Regular 400;
+      margin: auto;
+
+    }
