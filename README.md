@@ -11,7 +11,7 @@ Home Page: <br>
 ![plot](Sample/home.PNG)
 
 display selected note:<br>
-![plot](Sample/note details.PNG)
+![plot](Sample/noteDetails.PNG)
 
 Add new note:<br>
 ![plot](Sample/addNote.PNG)
