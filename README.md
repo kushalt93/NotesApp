@@ -10,6 +10,17 @@ Sample UI:<br>
 Home Page: <br>
 ![plot](Sample/home.PNG)
 
+display selected note:<br>
+![plot](Sample/note details.PNG)
+
+Add new note:<br>
+![plot](Sample/addNote.PNG)
+
+Update/Delete note:<br>
+![plot](Sample/updateDeleteNote.PNG)
+
+
+
 Currently working on adding a backend to enable update and delete features.<br>
 
 
